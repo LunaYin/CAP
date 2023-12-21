@@ -9,7 +9,6 @@ build-parameters:
     - builder: custom
       commands:
         - npm install
-        - npx rimraf gen/db/src/gen/data
         - npx cds build --production
 modules:
   - name: cpapp-srv

@@ -65,7 +65,7 @@ modules:
   type: com.sap.application.content
   path: .
   requires:
-  - name: cpapp-repo-host
+  - name: cpapp-html5-repo-host
     parameters:
       content-target: true
   build-parameters:
@@ -142,7 +142,7 @@ resources:
 - name: cpapp-html5-repo-host
   type: org.cloudfoundry.managed-service
   parameters:
-    service: html-apps-repo
+    service: html5-apps-repo
     service-plan: app-host
 - name: cpapp-repo-host
   type: org.cloudfoundry.managed-service
